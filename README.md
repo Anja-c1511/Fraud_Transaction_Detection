@@ -45,7 +45,7 @@ Follow the steps below to set up and run the project locally.
 
 4. **Run the Flask App**:
     ```bash
-    python app.py
+    Flask --app flask/app run
     ```
 
 5. **Open in Browser**:
