@@ -1,6 +1,9 @@
 # FRAUD TRANSCATION DETECTION 
 
-Vist our webpage: [https://fraud-trans-detect.streamlit.app/](https://fraudtransactiondetection-j5svn.streamlit.app/)
+Vist our webpage: [Streamlit App](https://fraudtransactiondetection-j5svn.streamlit.app/)
+![image](https://github.com/user-attachments/assets/0fb6cfc9-3d9d-4469-8371-d90d4a5a9cc4)
+![image](https://github.com/user-attachments/assets/2fe06fd2-6017-4c39-af9e-93c06f785e26)
+
 
 ## Objective
 Our idea aims to develop a fraud detection system for financial transactions that can accurately identify fraudulent activities and prevent potential losses. By leveraging machine learning algorithms and advanced data analytics techniques, we aim to create a robust and effective solution that enhances security and trust in financial transactions.
