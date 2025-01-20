@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection CSV Results</title>
+    <style>
+        /* Result CSV page styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.85), rgba(50, 10, 10, 0.85)), 
+                        url('/static/cyber.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+        }
+        .result-container {
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #8B0000, #B22222);
+        }
+        .result-container.legitimate {
+            background: linear-gradient(135deg, #006400, #228B22);
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            color: #ffffff;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .back-button {
+            text-decoration: none;
+            background: linear-gradient(90deg, #B22222, #FF6347);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>CSV Fraud Detection Results</h2>
+        <table>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Status</th>
+            </tr>
+            {% for transaction in transactions %}
+            <tr>
+                <td>{{ transaction.id }}</td>
+                <td class="{{ transaction.result_class }}">{{ transaction.result_text }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>

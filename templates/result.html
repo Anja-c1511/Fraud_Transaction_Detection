@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.85), rgba(50, 10, 10, 0.85)), 
+                        url('/static/cyber.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+            max-width: 400px;
+            width: 90%;
+        }
+        .container.legitimate {
+            background: linear-gradient(135deg, #006400, #228B22); /* Green gradient for legitimate transactions */
+        }
+        .container.fraud {
+            background: linear-gradient(135deg, #8B0000, #B22222); /* Red gradient for fraudulent transactions */
+        }
+        .result-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .back-button-container {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .back-button {
+            text-decoration: none;
+            background: linear-gradient(90deg, #B22222, #FF6347);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background: linear-gradient(90deg, #FF6347, #B22222);
+        }
+    </style>
+</head>
+<body>
+    <!-- Dynamically apply 'legitimate' or 'fraud' class to the container -->
+    <div class="container {{ resultClass }}">
+        <p class="result-text">{{ result }}</p>
+    </div>
+    <div class="back-button-container">
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
