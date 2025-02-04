@@ -6,7 +6,7 @@ Vist our webpage: [Streamlit App](https://fraudtransactiondetection-j5svn.stream
 
 
 ## Abstract
-Our idea aims to develop a fraud detection system for financial transactions that can accurately identify fraudulent activities and prevent potential losses. By leveraging machine learning algorithms and advanced data analytics techniques, we aim to create a robust and effective solution that enhances security and trust in financial transactions.
+The idea aims to develop a fraud detection system for financial transactions that can accurately identify fraudulent activities and prevent potential losses. By leveraging machine learning algorithms and advanced data analytics techniques, aim to create a robust and effective solution that enhances security and trust in financial transactions.
 
 ##  Features
 
