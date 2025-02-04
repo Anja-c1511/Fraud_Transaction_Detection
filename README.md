@@ -1,6 +1,6 @@
 # FRAUD TRANSCATION DETECTION 
 
-Vist our webpage: [Streamlit App](https://fraudtransactiondetection-j5svn.streamlit.app/)
+Vist webpage: [Streamlit App](https://fraudtransactiondetection-j5svn.streamlit.app/)
 ![image](https://github.com/user-attachments/assets/0fb6cfc9-3d9d-4469-8371-d90d4a5a9cc4)
 ![image](https://github.com/user-attachments/assets/2fe06fd2-6017-4c39-af9e-93c06f785e26)
 
